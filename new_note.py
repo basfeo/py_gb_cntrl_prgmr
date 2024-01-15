@@ -117,46 +117,6 @@ class NoteManager:
         else:
             print("Note not found.")
 
-# Пример использования:
-#if __name__ == "__main__":
-#    filename = "notes.json"
-#    manager = NoteManager(filename)
-#
-#    while True:
-#        print("\nOptions:")
-#        print("1. List notes")
-#        print("2. View note")
-#        print("3. Add note")
-#        print("4. Edit note")
-#        print("5. Delete note")
-#        print("6. Exit")
-#
-#        choice = input("Enter your choice (1-6): ")
-#
-#        if choice == "1":
-#            manager.list_notes()
-#        elif choice == "2":
-#            note_id = input("Enter note ID: ")
-#            manager.view_note(note_id)
-#        elif choice == "3":
-#            title = input("Enter note title: ")
-#            body = input("Enter note body: ")
-#            manager.add_note(title, body)
-#        elif choice == "4":
-#            note_id = input("Enter note ID to edit: ")
-#            title = input("Enter new title: ")
-#            body = input("Enter new body: ")
-#            manager.edit_note(note_id, title, body)
-#        elif choice == "5":
-#            note_id = input("Enter note ID to delete: ")
-#            manager.delete_note(note_id)
-#        elif choice == "6":
-#            print("Exiting program.")
-#            break
-#        else:
-#            print("Invalid choice. Please enter a number between 1 and 6.")
-# ...
-
 if __name__ == "__main__":
     filename = "notes.json"
     manager = NoteManager(filename)
